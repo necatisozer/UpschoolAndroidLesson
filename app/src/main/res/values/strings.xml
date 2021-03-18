@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login Application</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_success_message">Login successful!\nWelcome %s</string>
+    <string name="email_empty_error">Email cannot be empty!</string>
+    <string name="email_invalid_error">Email is not valid!</string>
+    <string name="email_invalid_password">Password cannot be shorter than 8 characters</string>
+</resources>

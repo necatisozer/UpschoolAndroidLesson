@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Giriş Uygulaması</string>
+    <string name="e_mail">Mail adresi</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş Yap</string>
+    <string name="login_success_message">Giriş başarılı!\n Hoşgeldin %s</string>
+    <string name="email_empty_error">Mail adresi boş olamaz!</string>
+    <string name="email_invalid_error">Mail adresi geçerli değil</string>
+    <string name="email_invalid_password">Parola 8 karakterden küçük olamaz!</string>
+</resources>
