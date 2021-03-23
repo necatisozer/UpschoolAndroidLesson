@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoxActivity">
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#EF5350"
+        android:text="Box 1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="#7E57C2"
+        android:text="Box 2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box1"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <TextView
+        android:id="@+id/box3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#FFEE58"
+        android:text="Box 3"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/box4"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/box2"
+        app:layout_constraintTop_toTopOf="@+id/box2"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#66BB6A"
+        android:text="Box 4"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toTopOf="@+id/box5"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box3" />
+
+    <TextView
+        android:id="@+id/box5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFA726"
+        android:text="Box 5"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintBottom_toBottomOf="@+id/box2"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box4"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
