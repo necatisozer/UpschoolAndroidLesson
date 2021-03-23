@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.necatisozer.dsc.myapplication.User" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".UserProfileActivity">
+
+        <ImageView
+            android:id="@+id/imageViewAvatar"
+            imageUrl="@{user.photoUrl}"
+            isPremium="@{user.premium}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@{user.username}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="User name" />
+
+
+    </LinearLayout>
+</layout>
